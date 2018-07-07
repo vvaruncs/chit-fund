@@ -1,0 +1,14 @@
+.card-padding{
+    padding:30px;
+}
+.padding-tb{
+    padding-top:15px;
+    padding-bottom: 15px;
+}
+.login-txt{
+    font-size: 30px;
+}
+.custom-login-btn{
+    background-color: #135775;
+    color: #fff;
+}

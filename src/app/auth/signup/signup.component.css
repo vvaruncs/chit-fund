@@ -1,0 +1,25 @@
+.card-padding{
+    padding:30px;
+}
+.signup-txt{
+    font-size: 30px;
+}
+.padding-tb{
+    padding-top:15px;
+    padding-bottom: 15px;
+}
+.gender{
+    padding-top:10px;
+}
+.helper{
+    margin-left:10px;
+    margin-right:10px;
+}
+.radio-inline{
+    color: black;
+    font-size: 16px;
+}
+.custom-reg-btn{
+    background-color: #135775;
+    color: #fff;
+}

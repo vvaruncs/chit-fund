@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AuthModule } from './auth/auth.module';
 import { appRoutesProvider } from './app.routes';
-
+import { AdminPanelModule } from './admin-panel/admin-panel.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +12,8 @@ import { appRoutesProvider } from './app.routes';
   imports: [
     BrowserModule,
     appRoutesProvider,
-    AuthModule
+    AuthModule,
+    AdminPanelModule
   ],
   providers: [],
   bootstrap: [AppComponent]

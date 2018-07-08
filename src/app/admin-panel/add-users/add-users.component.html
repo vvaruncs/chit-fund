@@ -1,0 +1,61 @@
+<form>
+  <div class=" card col-md-8 offset-md-2 padding-box">
+    <div class="row padding-tb">
+      <div class="form-group col-md-6">
+        <label for="firstName">First name</label>
+        <input type="email" class="form-control" id="firstName" aria-describedby="firstName" placeholder="Enter firstName">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="lastName">Last name</label>
+        <input type="lastName" class="form-control" id="lastName" placeholder="Enter lastName">
+      </div>
+    </div>
+
+    <div class="row padding-tb">
+      <div class="col-md-6">
+          <label for="firstName">Job Type</label>
+          <div>
+          <div class="btn-group" dropdown>
+              <button id="worktype" dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
+                  Employed with MNC <span class="caret"></span>
+              </button>
+              <ul id="worktype" *dropdownMenu class="dropdown-menu" role="menu">
+                <li role="menuitem"><a class="dropdown-item" >Employed with MNC</a></li>
+                <li role="menuitem"><a class="dropdown-item" >Self Employed</a></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+          <label for="emailAddress">Email Address</label>
+          <input type="emailAddress" class="form-control" id="lastName" placeholder="Enter Email Address">
+      </div>
+    </div>
+
+    <div class="row padding-tb">
+        <div class="col-md-6">
+            <label for="chitAmount">Chit Amount</label>
+            <div>
+            <div class="btn-group" dropdown>
+                <button id="chitAmount" dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
+                  1,00,000<span class="caret"></span>
+                </button>
+                <ul id="chitAmount" *dropdownMenu class="dropdown-menu" role="menu">
+                  <li role="menuitem"><a class="dropdown-item" >1,00,000</a></li>
+                  <li role="menuitem"><a class="dropdown-item" >2,00,000</a></li>
+                  <li role="menuitem"><a class="dropdown-item" >5,00,000</a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="phoneNumber" class="form-control" id="phoneNumber" placeholder="Enter phoneNumber">
+        </div>
+      </div>
+
+    
+
+</div>
+</form>
+

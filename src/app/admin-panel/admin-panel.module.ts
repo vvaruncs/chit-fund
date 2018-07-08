@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AddUsersComponent } from './add-users/add-users.component';
+import { CreateChitGroupComponent } from './create-chit-group/create-chit-group.component';
 import { AdminRoutes } from './admin-panel.routes';
 import { BsDropdownModule } from 'ngx-bootstrap';
 
@@ -10,6 +10,6 @@ import { BsDropdownModule } from 'ngx-bootstrap';
     AdminRoutes,
     BsDropdownModule.forRoot()
   ],
-  declarations: [AddUsersComponent]
+  declarations: [CreateChitGroupComponent]
 })
 export class AdminPanelModule { }

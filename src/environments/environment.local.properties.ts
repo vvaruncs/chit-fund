@@ -11,4 +11,8 @@ export class LocalSettings{
         'SIGNUP_IMAGE':'assets/images/signup.png'
     }
 
+    CREATECHITGROUP = {
+        'CHIT_GROUP_IMAGE':'assets/images/signup.png'
+    }
+
 }

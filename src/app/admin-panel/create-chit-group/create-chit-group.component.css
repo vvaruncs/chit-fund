@@ -1,14 +1,13 @@
-.padding-box{
-    padding: 50px 20px;
+.card-padding{
+    padding:30px 60px;
 }
-
-.padding-tb{
-    padding-top:15px;
-    padding-bottom: 15px;
+.chit-txt{
+    font-size: 30px;
 }
-.padding-tb label{
+label{
     font-weight:bold;
 }
+
 
 .btn-primary.active.custom-file-control:before,
 .btn-primary.custom-file-control:active:before,
@@ -23,4 +22,11 @@
 .open>.btn.btn-primary.dropdown-toggle{
     background-color:#3498db;
     color:#fff;
+}
+.box-center{
+    display: flex;
+    align-items: center; /* align vertical */
+}
+.padding-lzero{
+    padding-left:0px;
 }

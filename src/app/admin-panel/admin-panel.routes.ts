@@ -1,16 +1,15 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from "@angular/router";
-import { AddUsersComponent } from "./add-users/add-users.component";
+import { CreateChitGroupComponent } from './create-chit-group/create-chit-group.component';
 
 const adminRoutes:Routes=[
     {
-        path:"adduser",
-        component:AddUsersComponent
+        path:"createchitgroup",
+        component:CreateChitGroupComponent
     },
     {
-        path:"",
-        redirectTo:"adduser",
-        pathMatch: 'full'
+        path:"**",
+        redirectTo:"createchitgroup"
     }
 ];
 

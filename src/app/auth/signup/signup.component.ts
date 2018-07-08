@@ -1,4 +1,4 @@
-import { LocalSettings } from './../../../environments/environment.local.properties';
+import { LocalSettings } from '../../../environments/environment.local.properties';
 import { Component, OnInit } from '@angular/core';
 
 @Component({

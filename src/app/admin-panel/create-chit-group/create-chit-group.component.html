@@ -1,0 +1,74 @@
+
+<div class="container col-md-8 offset-md-2">
+        <div class="card card-padding">
+           <div class="text-center">
+              <img [src]="crateChitPoolImg" width="100" />
+              <div class="font-weight-bold chit-txt" >Create Chit Group</div>
+           </div>
+           <div>
+           <form class="card-padding">
+              <div class="row">
+                  <div class="col-md-8 offset-md-2 mb-3 padding-tb">
+                        <label for="chitGroupName">Chit Group Name</label>
+                        <input type="text" class="form-control" id="chitGroupName" placeholder="Enter your chit group name" value="" required>
+                  </div>
+                  <div class="row col-md-8 offset-md-2 mb-3 padding-tb">
+                        <div class="col-md-6 box-center padding-lzero">
+                          <label for="chitAmount">Chit Amount</label>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="btn-group" dropdown>
+                              <button id="chitAmount" dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
+                                1,00,000<span class="caret"></span>
+                              </button>
+                              <ul id="chitAmount" *dropdownMenu class="dropdown-menu" role="menu">
+                                <li role="menuitem"><a class="dropdown-item" >1,00,000</a></li>
+                                <li role="menuitem"><a class="dropdown-item" >2,00,000</a></li>
+                                <li role="menuitem"><a class="dropdown-item" >5,00,000</a></li>
+                              </ul>
+                          </div>
+                        </div>
+                </div>
+                <div class="row col-md-8 offset-md-2 mb-3 padding-tb">
+                        <div class="col-md-6 box-center padding-lzero">
+                          <label for="numberOfCustomers">Number of customers</label>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="btn-group" dropdown>
+                              <button id="numberOfCustomers" dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
+                                10<span class="caret"></span>
+                              </button>
+                              <ul id="numberOfCustomers" *dropdownMenu class="dropdown-menu" role="menu">
+                                <li role="menuitem"><a class="dropdown-item" >5</a></li>
+                                <li role="menuitem"><a class="dropdown-item" >10</a></li>
+                                <li role="menuitem"><a class="dropdown-item" >15</a></li>
+                                <li role="menuitem"><a class="dropdown-item" >20</a></li>
+                              </ul>
+                          </div>
+                        </div>
+                </div>
+                <div class="row col-md-8 offset-md-2 mb-3 padding-tb">
+                        <div class="col-md-6 box-center padding-lzero">
+                          <label for="duration">Duration</label>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="btn-group" dropdown>
+                              <button id="duration" dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
+                                10 Months<span class="caret"></span>
+                              </button>
+                              <ul id="duration" *dropdownMenu class="dropdown-menu" role="menu">
+                                <li role="menuitem"><a class="dropdown-item" >10 Months</a></li>
+                                <li role="menuitem"><a class="dropdown-item" >15 Months</a></li>
+                                <li role="menuitem"><a class="dropdown-item" >20 Months</a></li>
+                                <li role="menuitem"><a class="dropdown-item" >24 Months</a></li>
+                              </ul>
+                          </div>
+                        </div>
+                </div>
+              </div>
+            </form>
+            <div class="text-center">
+               <button class="btn btn-primary">Create group</button>
+            </div>
+        </div>
+</div>

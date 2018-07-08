@@ -4,12 +4,13 @@ import { LoginComponent } from './login/login.component';
 import { LocalSettings } from '../../environments/environment.local.properties';
 import { AuthRouterModule } from './auth.routes';
 import { SignupComponent } from './signup/signup.component';
-
+import { BsDropdownModule } from 'ngx-bootstrap';
 
 @NgModule({
   imports: [
     CommonModule,
-    AuthRouterModule
+    AuthRouterModule,
+    BsDropdownModule.forRoot()
   ],
   declarations: [LoginComponent, SignupComponent],
   exports:[LoginComponent],

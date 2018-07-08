@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container col-md-8 offset-md-2">
   <div class="card card-padding">
      <div class="text-center">
         <img [src]="signupImage" width="100" />
@@ -9,27 +9,27 @@
         <div class="row">
             <div class="col-md-6 mb-3 padding-tb">
               <label for="firstName">First name</label>
-              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" value="" required>
             </div>
             <div class="col-md-6 mb-3 padding-tb">
               <label for="lastName">Last name</label>
-              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" value="" required>
             </div>
             <div class="col-md-6 mb-3 padding-tb">
                 <label for="address">Address</label>
-                <input type="text" class="form-control" id="address" placeholder="" value="" required>
+                <input type="text" class="form-control" id="address" placeholder="Enter your address" value="" required>
             </div>
             <div class="col-md-6 mb-3 padding-tb">
                 <label for="emailaddress">Email Address</label>
-                <input type="text" class="form-control" id="emailaddress" placeholder="" value="" required>
+                <input type="text" class="form-control" id="emailaddress" placeholder="Enter your email address" value="" required>
             </div>
             <div class="col-md-6 mb-3 padding-tb">
                 <label for="phonenumber">Phone Number</label>
-                <input type="text" class="form-control" id="phonenumber" placeholder="" value="" required>
+                <input type="text" class="form-control" id="phonenumber" placeholder="Enter your phone number" value="" required>
             </div>
             <div class="col-md-6 mb-3 padding-tb">
                 <label for="age">Age</label>
-                <input type="text" class="form-control" id="age" placeholder="" value="" required>
+                <input type="text" class="form-control" id="age" placeholder="Enter your age" value="" required>
             </div>
             <div class="col-md-6 mb-3 padding-tb">
                 <label for="country">Gender</label>
@@ -41,9 +41,61 @@
             </div>
             <div class="col-md-6 mb-3 padding-tb">
                 <label for="income">Monthly Income</label>
-                <input type="text" class="form-control" id="income" placeholder="" value="" required>
+                <input type="text" class="form-control" id="income" placeholder="Enter your monthly income" value="" required>
             </div>
           </div>
+          <div class="row padding-tb">
+                <div class="col-md-6">
+                    <label for="firstName">Job Type</label>
+                    <div>
+                    <div class="btn-group" dropdown>
+                        <button id="worktype" dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
+                            Employed with MNC <span class="caret"></span>
+                        </button>
+                        <ul id="worktype" *dropdownMenu class="dropdown-menu" role="menu">
+                          <li role="menuitem"><a class="dropdown-item" >Employed with MNC</a></li>
+                          <li role="menuitem"><a class="dropdown-item" >Self Employed</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="chitAmount">Chit Amount</label>
+                      <div>
+                      <div class="btn-group" dropdown>
+                          <button id="chitAmount" dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
+                            1,00,000<span class="caret"></span>
+                          </button>
+                          <ul id="chitAmount" *dropdownMenu class="dropdown-menu" role="menu">
+                            <li role="menuitem"><a class="dropdown-item" >1,00,000</a></li>
+                            <li role="menuitem"><a class="dropdown-item" >2,00,000</a></li>
+                            <li role="menuitem"><a class="dropdown-item" >5,00,000</a></li>
+                          </ul>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="row padding-tb">
+                    <div class="col-md-6">
+                            <label for="firstName">Bank Name</label>
+                            <div>
+                            <div class="btn-group" dropdown>
+                                <button id="bankname" dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
+                                    HDFC <span class="caret"></span>
+                                </button>
+                                <ul id="bankname" *dropdownMenu class="dropdown-menu" role="menu">
+                                  <li role="menuitem"><a class="dropdown-item" >HDFC</a></li>
+                                  <li role="menuitem"><a class="dropdown-item" >AXIS</a></li>
+                                  <li role="menuitem"><a class="dropdown-item" >ICICI</a></li>
+                                </ul>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-6 mb-3 padding-tb">
+                            <label for="accountNumber">Bank Account Number</label>
+                            <input type="text" class="form-control" id="accountNumber" placeholder="Enter your bank account number" value="" required>
+                    </div>
+              </div>
       </form>
     </div>
     <button class="btn btn-primary custom-reg-btn col-md-4 offset-md-4">Create my account</button>

@@ -5,11 +5,13 @@ import { LocalSettings } from '../../environments/environment.local.properties';
 import { AuthRouterModule } from './auth.routes';
 import { SignupComponent } from './signup/signup.component';
 import { BsDropdownModule } from 'ngx-bootstrap';
-
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 @NgModule({
   imports: [
     CommonModule,
     AuthRouterModule,
+    FormsModule,
+    ReactiveFormsModule,
     BsDropdownModule.forRoot()
   ],
   declarations: [LoginComponent, SignupComponent],

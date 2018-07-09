@@ -4,16 +4,34 @@
         <img [src]="loginImage" width="150" />
         <div class="font-weight-bold login-txt" >Login</div>
       </div>
-      <form>
-        <div class="form-group padding-tb">
-          <label for="email" class="font-weight-bold" >Email:</label>
-          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-        </div>
-        <div class="form-group padding-tb">
-          <label for="pwd" class="font-weight-bold" >Password:</label>
-          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+      <form [formGroup]="loginForm">
+        <div formGroupName="login">
+          <div class="form-group padding-tb">
+            <label for="email" class="font-weight-bold" >Email:</label>
+            <input formControlName="userName" type="text" class="form-control" id="userName" placeholder="Enter user name" name="userName">
+            <div class="error-holder">
+              <div *ngIf="loginForm.get('login').get('userName').touched &&
+                          loginForm.get('login').get('userName').invalid">
+                <div class="error" *ngIf="loginForm.get('login').get('userName').errors.required">
+                  *User name required
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group padding-tb">
+            <label for="pwd" class="font-weight-bold" >Password:</label>
+            <input formControlName="password" type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+            <div class="error-holder">
+                <div *ngIf="loginForm.get('login').get('password').touched &&
+                            loginForm.get('login').get('password').invalid">
+                  <div class="error" *ngIf="loginForm.get('login').get('password').errors.required">
+                    *Password required
+                  </div>
+                </div>
+              </div>
+          </div>
         </div>
       </form>
-      <button class="btn btn-primary custom-login-btn col-md-6 offset-md-3">Login to my account</button>
+      <button [disabled]="!loginForm.valid" class="btn btn-primary custom-login-btn col-md-6 offset-md-3">Login to my account</button>
     </div>
   </div>

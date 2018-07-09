@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LocalSettings } from '../../../environments/environment.local.properties';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -9,9 +10,19 @@ import { LocalSettings } from '../../../environments/environment.local.propertie
 export class LoginComponent implements OnInit {
 
   loginImage:string;
-  
-  constructor(private localSettings:LocalSettings){
+  loginForm:FormGroup;
+
+  constructor(private localSettings:LocalSettings,
+              private fb:FormBuilder){
       this.loginImage = localSettings.LOGIN.LOGIN_IMAGE;
+
+      this.loginForm = fb.group({
+             login:fb.group({
+               userName:['',Validators.compose([Validators.required])],
+               password:['',Validators.compose([Validators.required])]
+             })
+      });
+
   }
 
   ngOnInit() {

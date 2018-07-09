@@ -7,30 +7,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  public doughnutChartLabels:string[] = ['Download Sales', 'In-Store Sales', 'Mail-Order Sales'];
-  public doughnutChartData:number[] = [350, 450, 100];
+  public doughnutChartLabels:string[] = ['Long-term', 'Short-term', 'Medium-term'];
+  public doughnutChartData:number[] = [33, 33, 33];
   public doughnutChartType:string = 'doughnut';
- 
-  // events
-  public DoughnutchartClicked(e:any):void {
-    console.log(e);
+  public doughnutChartOptions:any={
+    legend: {position: 'bottom'}
   }
- 
-  public DoughnutchartHovered(e:any):void {
-    console.log(e);
-  }
+  
 
   public barChartOptions:any = {
     scaleShowVerticalLines: false,
-    responsive: true
+    responsive: true,
+    legend: {position: 'bottom'}
   };
-  public barChartLabels:string[] = ['2006', '2007', '2008', '2009', '2010', '2011', '2012'];
+
+  public barChartLabels:string[] = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL'];
   public barChartType:string = 'bar';
   public barChartLegend:boolean = true;
  
   public barChartData:any[] = [
-    {data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A'},
-    {data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B'}
+    {data: [3300, 3400, 3500, 3600, 3700, 3800, 4000], label: 'Transaction Amount'}
   ];
   
 

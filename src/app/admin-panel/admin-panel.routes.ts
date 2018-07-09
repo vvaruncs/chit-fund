@@ -8,8 +8,9 @@ const adminRoutes:Routes=[
         component:CreateChitGroupComponent
     },
     {
-        path:"**",
-        redirectTo:"createchitgroup"
+        path:"",
+        redirectTo:"createchitgroup",
+        pathMatch: 'full'
     }
 ];
 

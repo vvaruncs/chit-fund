@@ -32,13 +32,14 @@
     color:#e74c3c;
     font-weight:bold;
 }
-input.ng-touched.ng-invalid{
-  border-color:#e74c3c;
-  border-bottom:2px solid #e74c3c;
-  background-image: none;
-}
-input.ng-touched.ng-valid{
+
+input.ng-touched.ng-valid,input.ng-pristine.ng-invalid{
     border-color:#2ecc71;
-    border-bottom:2px solid #2ecc71;
+    border-bottom:1px solid #888;
     background-image: none;
 }
+input.ng-touched.ng-invalid{
+    border-color:#e74c3c;
+    border-bottom:1px solid #e74c3c;
+    background-image: none;
+  }

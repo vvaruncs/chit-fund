@@ -17,12 +17,14 @@ export class LoginComponent implements OnInit {
       this.loginImage = localSettings.LOGIN.LOGIN_IMAGE;
 
       this.loginForm = fb.group({
-             login:fb.group({
                userName:['',Validators.compose([Validators.required])],
                password:['',Validators.compose([Validators.required])]
-             })
       });
 
+  }
+
+  doLogin(loginFormData){
+     console.log(loginFormData);
   }
 
   ngOnInit() {

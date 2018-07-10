@@ -4,15 +4,15 @@
         <img [src]="loginImage" width="150" />
         <div class="font-weight-bold login-txt" >Login</div>
       </div>
-      <form [formGroup]="loginForm">
-        <div formGroupName="login">
+      <form [formGroup]="loginForm" (ngSubmit)="doLogin(loginForm.value)" >
+        <div>
           <div class="form-group padding-tb">
             <label for="email" class="font-weight-bold" >Email:</label>
-            <input formControlName="userName" type="text" class="form-control" id="userName" placeholder="Enter user name" name="userName">
+            <input formControlName="userName"  type="text" class="form-control" id="userName" placeholder="Enter user name" name="userName">
             <div class="error-holder">
-              <div *ngIf="loginForm.get('login').get('userName').touched &&
-                          loginForm.get('login').get('userName').invalid">
-                <div class="error" *ngIf="loginForm.get('login').get('userName').errors.required">
+              <div *ngIf="loginForm.get('userName').touched &&
+                          loginForm.get('userName').invalid">
+                <div class="error" *ngIf="loginForm.get('userName').errors.required">
                   *User name required
                 </div>
               </div>
@@ -22,16 +22,16 @@
             <label for="pwd" class="font-weight-bold" >Password:</label>
             <input formControlName="password" type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
             <div class="error-holder">
-                <div *ngIf="loginForm.get('login').get('password').touched &&
-                            loginForm.get('login').get('password').invalid">
-                  <div class="error" *ngIf="loginForm.get('login').get('password').errors.required">
+                <div *ngIf="loginForm.get('password').touched &&
+                            loginForm.get('password').invalid">
+                  <div class="error" *ngIf="loginForm.get('password').errors.required">
                     *Password required
                   </div>
                 </div>
               </div>
           </div>
         </div>
+        <button type="submit" [disabled]="!loginForm.valid"  class="btn btn-primary custom-login-btn col-md-6 offset-md-3">Login to my account</button>
       </form>
-      <button [disabled]="!loginForm.valid" class="btn btn-primary custom-login-btn col-md-6 offset-md-3">Login to my account</button>
     </div>
   </div>

@@ -1,252 +1,243 @@
-
 <div class="container">
-   <div class="row">
-      <div class="col-md-6">
-          <div class="card padding-30px">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card padding-30px">
 
-              <div class="title-txt">Customer Basic information</div>
-              <div class="row">
+        <div class="title-txt">Customer Basic information</div>
+        <div class="row">
 
-                <div class="col-md-6 padding-space">
-                    <span>Customer Name</span>
-                    <span class="float-right">:</span>
-                </div>
-                <div class="col-md-6 padding-space">
-                    <span>Arunkumar</span>
-                </div>
-
-                <div class="col-md-6 padding-space">
-                    <span>Address</span>
-                    <span class="float-right">:</span>
-                </div>
-                <div class="col-md-6 padding-space">
-                    <span>2/158,Karpaganatharkulam, Thiruthuraipoondi, Thiruvarur</span>
-                </div>
-
-                <div class="col-md-6 padding-space">
-                    <span>Email Address</span>
-                    <span class="float-right">:</span>
-                </div>
-                <div class="col-md-6 padding-space">
-                    <span>vvaruncs@gmail.com</span>
-                </div>
-
-                <div class="col-md-6 padding-space">
-                    <span>Phone Number</span>
-                    <span class="float-right">:</span>
-                </div>
-                <div class="col-md-6 padding-space">
-                    <span>9941192258</span>
-                </div>
-
-                <div class="col-md-6 padding-space">
-                    <span>Age</span>
-                    <span class="float-right">:</span>
-                </div>
-                <div class="col-md-6 padding-space">
-                    <span>27</span>
-                </div>
-
-                <div class="col-md-6 padding-space">
-                    <span>Gender</span>
-                    <span class="float-right">:</span>
-                </div>
-                <div class="col-md-6 padding-space">
-                    <span>Male</span>
-                </div>
-
-                <div class="col-md-6 padding-space">
-                    <span>Montly Income</span>
-                    <span class="float-right">:</span>
-                </div>
-                <div class="col-md-6 padding-space">
-                    <span>1,10,000</span>
-                </div>
-
-                <div class="col-md-6 padding-space">
-                    <span>Job Type</span>
-                    <span class="float-right">:</span>
-                </div>
-                <div class="col-md-6 padding-space">
-                    <span>Employed with MNC</span>
-                </div>
-
-              </div>
-
-              <div class="col-md-12 title-txt">Bank Details</div>
-              <div class="col-md-12">
-                <table class="table table-bordered">
-                    <tbody>
-                      <tr>
-                        <td>Account Number</td>
-                        <td>000000000000</td>
-                      </tr>
-                      <tr>
-                          <td>IFSC Code</td>
-                          <td>ICICI0000563</td>
-                      </tr>
-                      <tr>
-                            <td>Bank Name</td>
-                            <td>HDFC Bank</td>
-                      </tr>
-                    </tbody>
-                </table>
-              </div>
-
-            <div class="col-md-12 title-txt">Savings Snapshot</div>
-              <div style="display: block">
-                    <canvas baseChart
-                                [data]="doughnutChartData"
-                                [labels]="doughnutChartLabels"
-                                [options]="doughnutChartOptions"
-                                [chartType]="doughnutChartType">
-                    </canvas>
-                  </div>
-
-              <div class="col-md-12 title-txt">Enrolled Schemes</div>
-              <div class="col-md-12">
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th scope="col">Scheme Name</th>
-                            <th scope="col">Amount</th>
-                            <th scope="col">Total premium paid</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Aishwaya Lakshmi</td>
-                        <td>1000000</td>
-                        <td>5/20</td>
-                      </tr>
-                      <tr>
-                            <td>Aishwaya Lakshmi</td>
-                            <td>1000000</td>
-                            <td>5/20</td>
-                          </tr>
-                          <tr>
-                                <td>Aishwaya Lakshmi</td>
-                                <td>1000000</td>
-                                <td>5/20</td>
-                              </tr>
-                    </tbody>
-                </table>
-              </div>
-
-              
-
-              <div class="col-md-12 title-txt">Upcoming Expected Premiums</div>
-              <div class="col-md-12">
-                <table class="table table-bordered">
-                    <thead>
-                      <tr>
-                        <th scope="col">Date</th>
-                        <th scope="col">Expected premium</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>22/10/2018</td>
-                        <td>10000.00</td>
-                      </tr>
-                      <tr>
-                          <td>22/10/2018</td>
-                          <td>10000.00</td>
-                      </tr>
-                      <tr>
-                            <td>22/10/2018</td>
-                            <td>10000.00</td>
-                      </tr>
-                    </tbody>
-                </table>
-              </div>
-
+          <div class="col-md-6 padding-space">
+            <span>Customer Name</span>
+            <span class="float-right">:</span>
           </div>
-      </div>
-      <div class="col-md-6">
-          <div class="card padding-30px">
-
-             <div class="col-md-12 title-txt">Recent past premium transactions</div>
-              <div style="display: block">
-                  <canvas baseChart
-                          [datasets]="barChartData"
-                          [labels]="barChartLabels"
-                          [options]="barChartOptions"
-                          [legend]="barChartLegend"
-                          [chartType]="barChartType"></canvas>
-                </div>
-
-              <div class="row">
-
-                  <div class="col-md-6 padding-space">
-                      <span>January</span>
-                      <span class="float-right">:</span>
-                  </div>
-                  <div class="col-md-6 padding-space">
-                      <span>3300</span>
-                  </div>
-  
-                  <div class="col-md-6 padding-space">
-                      <span>Febraury</span>
-                      <span class="float-right">:</span>
-                  </div>
-                  <div class="col-md-6 padding-space">
-                      <span>3400</span>
-                  </div>
-  
-                  <div class="col-md-6 padding-space">
-                      <span>March</span>
-                      <span class="float-right">:</span>
-                  </div>
-                  <div class="col-md-6 padding-space">
-                      <span>3500</span>
-                  </div>
-  
-                  <div class="col-md-6 padding-space">
-                      <span>April</span>
-                      <span class="float-right">:</span>
-                  </div>
-                  <div class="col-md-6 padding-space">
-                      <span>3600</span>
-                  </div>
-  
-                  <div class="col-md-6 padding-space">
-                      <span>May</span>
-                      <span class="float-right">:</span>
-                  </div>
-                  <div class="col-md-6 padding-space">
-                      <span>3700</span>
-                  </div>
-  
-                </div>
-
-                <div class="col-md-12 title-style">Upcoming Expected Premiums</div>
-              <div class="col-md-12">
-                <table class="table table-bordered">
-                    <thead>
-                      <tr>
-                        <th scope="col">Date</th>
-                        <th scope="col">Expected premium</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th>22/10/2018</th>
-                        <td>10000.00</td>
-                      </tr>
-                      <tr>
-                          <th>22/10/2018</th>
-                          <td>10000.00</td>
-                      </tr>
-                      <tr>
-                            <th>22/10/2018</th>
-                            <td>10000.00</td>
-                      </tr>
-                    </tbody>
-                </table>
-              </div>
-
+          <div class="col-md-6 padding-space">
+            <span>Arunkumar</span>
           </div>
+
+          <div class="col-md-6 padding-space">
+            <span>Address</span>
+            <span class="float-right">:</span>
+          </div>
+          <div class="col-md-6 padding-space">
+            <span>2/158,Karpaganatharkulam, Thiruthuraipoondi, Thiruvarur</span>
+          </div>
+
+          <div class="col-md-6 padding-space">
+            <span>Email Address</span>
+            <span class="float-right">:</span>
+          </div>
+          <div class="col-md-6 padding-space">
+            <span>vvaruncs@gmail.com</span>
+          </div>
+
+          <div class="col-md-6 padding-space">
+            <span>Phone Number</span>
+            <span class="float-right">:</span>
+          </div>
+          <div class="col-md-6 padding-space">
+            <span>9941192258</span>
+          </div>
+
+          <div class="col-md-6 padding-space">
+            <span>Age</span>
+            <span class="float-right">:</span>
+          </div>
+          <div class="col-md-6 padding-space">
+            <span>27</span>
+          </div>
+
+          <div class="col-md-6 padding-space">
+            <span>Gender</span>
+            <span class="float-right">:</span>
+          </div>
+          <div class="col-md-6 padding-space">
+            <span>Male</span>
+          </div>
+
+          <div class="col-md-6 padding-space">
+            <span>Montly Income</span>
+            <span class="float-right">:</span>
+          </div>
+          <div class="col-md-6 padding-space">
+            <span>1,10,000</span>
+          </div>
+
+          <div class="col-md-6 padding-space">
+            <span>Job Type</span>
+            <span class="float-right">:</span>
+          </div>
+          <div class="col-md-6 padding-space">
+            <span>Employed with MNC</span>
+          </div>
+
+        </div>
+
+        <div class="col-md-12 title-txt">Bank Details</div>
+        <div class="col-md-12">
+          <table class="table table-bordered">
+            <tbody>
+              <tr>
+                <td>Account Number</td>
+                <td>000000000000</td>
+              </tr>
+              <tr>
+                <td>IFSC Code</td>
+                <td>ICICI0000563</td>
+              </tr>
+              <tr>
+                <td>Bank Name</td>
+                <td>HDFC Bank</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="col-md-12 title-txt">Savings Snapshot</div>
+        <div style="display: block">
+          <canvas baseChart [data]="doughnutChartData" [labels]="doughnutChartLabels" [options]="doughnutChartOptions" [chartType]="doughnutChartType">
+          </canvas>
+        </div>
+
+        <div class="col-md-12 title-txt">Enrolled Schemes</div>
+        <div class="col-md-12">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Scheme Name</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Total premium paid</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Aishwaya Lakshmi</td>
+                <td>1000000</td>
+                <td>5/20</td>
+              </tr>
+              <tr>
+                <td>Aishwaya Lakshmi</td>
+                <td>1000000</td>
+                <td>5/20</td>
+              </tr>
+              <tr>
+                <td>Aishwaya Lakshmi</td>
+                <td>1000000</td>
+                <td>5/20</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+
+        <div class="col-md-12 title-txt">Upcoming Expected Premiums</div>
+        <div class="col-md-12">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Expected premium</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>22/10/2018</td>
+                <td>10000.00</td>
+              </tr>
+              <tr>
+                <td>22/10/2018</td>
+                <td>10000.00</td>
+              </tr>
+              <tr>
+                <td>22/10/2018</td>
+                <td>10000.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
       </div>
-   </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card padding-30px">
+
+        <div class="col-md-12 title-txt">Recent past premium transactions</div>
+        <div style="display: block">
+          <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [legend]="barChartLegend"
+            [chartType]="barChartType"></canvas>
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-6 padding-space">
+            <span>January</span>
+            <span class="float-right">:</span>
+          </div>
+          <div class="col-md-6 padding-space">
+            <span>3300</span>
+          </div>
+
+          <div class="col-md-6 padding-space">
+            <span>Febraury</span>
+            <span class="float-right">:</span>
+          </div>
+          <div class="col-md-6 padding-space">
+            <span>3400</span>
+          </div>
+
+          <div class="col-md-6 padding-space">
+            <span>March</span>
+            <span class="float-right">:</span>
+          </div>
+          <div class="col-md-6 padding-space">
+            <span>3500</span>
+          </div>
+
+          <div class="col-md-6 padding-space">
+            <span>April</span>
+            <span class="float-right">:</span>
+          </div>
+          <div class="col-md-6 padding-space">
+            <span>3600</span>
+          </div>
+
+          <div class="col-md-6 padding-space">
+            <span>May</span>
+            <span class="float-right">:</span>
+          </div>
+          <div class="col-md-6 padding-space">
+            <span>3700</span>
+          </div>
+
+        </div>
+
+        <div class="col-md-12 title-style">Upcoming Expected Premiums</div>
+        <div class="col-md-12">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Expected premium</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>22/10/2018</th>
+                <td>10000.00</td>
+              </tr>
+              <tr>
+                <th>22/10/2018</th>
+                <td>10000.00</td>
+              </tr>
+              <tr>
+                <th>22/10/2018</th>
+                <td>10000.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
 </div>
